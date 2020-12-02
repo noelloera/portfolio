@@ -4,6 +4,7 @@
   "description": "Front-end portfolio (HTML, CSS, JS)",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "node app.js"
   },
   "engines": {
