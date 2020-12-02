@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Front-end portfolio (HTML, CSS, JS)",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noelloera/portfolio.git"
+  },
+  "author": "Noel Loera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noelloera/portfolio/issues"
+  },
+  "homepage": "https://github.com/noelloera/portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
