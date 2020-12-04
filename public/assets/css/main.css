@@ -2288,7 +2288,7 @@ header .icon.circled {
 
 /* Header */
 
-video {
+.background {
   object-fit: cover;
   position: absolute;
   z-index: 0;
