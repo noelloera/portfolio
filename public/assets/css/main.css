@@ -2414,6 +2414,7 @@ video{
 		text-align: center;
 		padding: 4.5em 0 4.5em 0;
 		margin-bottom: 0;
+		z-index:  1;
 	}
 
 		#banner header > p {
@@ -2766,6 +2767,9 @@ video{
 				margin-bottom: 6em;
 			}
 
+			.background{
+				height: 32%;
+		}
 		/* Section/Article */
 
 			section, article {
