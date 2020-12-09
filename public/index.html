@@ -9,7 +9,8 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <meta name="portfolio" content="A portfolio by: Noel Loera" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="./favicon.ico" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <noscript
       ><link rel="stylesheet" href="./assets/css/noscript.css"
@@ -38,14 +39,14 @@
             <p>Full-Stack Web Developer</p>
           </header>
           <footer>
-            <a id="button" class="scrolly" href="#banner"></a>
+            <a class="button circled scrolly" href="#banner">START</a>
           </footer>
         </div>
 
         <!-- Nav -->
         <nav id="nav">
           <ul>
-            <li><a class="scrolly" href="#banner">PROJECTS</a></li>
+            <li><a class="scrolly" href="#carousel">PROJECTS</a></li>
             <li><a class="scrolly" href="#features">ABOUT ME</a></li>
             <li><a class="scrolly" href="#footer">CONTACT ME</a></li>
             <li>
@@ -91,63 +92,37 @@
       </section>
 
       <!-- Carousel -->
-      <section class="carousel">
+      <section id="carousel" class="carousel">
         <div class="reel">
-          <article>
-            <a href="#" class="image featured"
-              ><img src="media/pic01.jpg" alt=""
-            /></a>
-            <header>
-              <h3><a href="#">STARVIN</a></h3>
-            </header>
-            <p>Front-End</p>
-            <p>(React, Yelp API)</p>
-            <div class="modal" id="modal">
-              <img src="media/pic01.jpg" alt="" />
-              <div class="modal-content">
-                <div class="modal-header">
-                  <div class="modal-title">STARVIN</div>
-                  <button class="close-button">&times;</button>
-                </div>
-                <div class="modal-body">
-                  <a href="https://www.starvin.noelloera.com">WEBSITE</a> |
-                  <a href="https://github.com/noelloera/starvin">CODE</a>
-                  <p>React | CSS | Yelp API</p>
-                  <p>
-                    Front-end React application which uses Yelp's API JSON data.
-                    Provides a simplified front-end experience to three types of
-                    queries made to the Yelp API (best matches, high ratings,
-                    and most amounts of reviews). Follows the API implementation
-                    standards provided in the Yelp documentation
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div id="overlay"></div>
+          <!-- Starvin -->
+          <article data-modal-target="#modal1">
+            <a class="image featured"><img src="media/pic01.jpg" alt="" /></a>
+            <h3><a>STARVIN</a></h3>
+            <p>Front-End<br />(React, Yelp API)</p>
           </article>
-          <article>
-            <a href="#" class="image featured"
-              ><img src="media/pic02.jpg" alt=""
-            /></a>
+
+          <!-- Quote Keeper -->
+          <article data-modal-target="#modal2">
+            <a class="image featured"><img src="media/pic02.jpg" alt="" /></a>
             <header>
-              <h3><a href="#">QUOTE KEEPER</a></h3>
+              <h3><a>QUOTE KEEPER</a></h3>
             </header>
             <p>Full-Stack</p>
             <p>(MongoDB, Express, Node, React)</p>
           </article>
 
-          <article>
-            <a href="#" class="image featured"
-              ><img src="media/pic03.jpg" alt=""
-            /></a>
+          <!-- Login -->
+          <article data-modal-target="#modal3">
+            <a class="image featured"><img src="media/pic03.jpg" alt="" /></a>
             <header>
-              <h3><a href="#">LOGIN</a></h3>
+              <h3><a>LOGIN</a></h3>
             </header>
             <p>Front-End</p>
             <p>(React)</p>
           </article>
 
-          <article>
+          <!-- Authenticate -->
+          <article data-modal-target="#modal4">
             <a href="#" class="image featured"
               ><img src="media/pic04.jpg" alt=""
             /></a>
@@ -155,10 +130,11 @@
               <h3><a href="#">AUTHENTICATE</a></h3>
             </header>
             <p>Back-End</p>
-            <p>(MongoDB, Express, Node)</p>
+            <p>Back-End(MongoDB, Express, Node)</p>
           </article>
 
-          <article>
+          <!-- Mixing -->
+          <article data-modal-target="#modal5">
             <a href="#" class="image featured"
               ><img src="media/pic05.jpg" alt=""
             /></a>
@@ -169,6 +145,7 @@
             <p>(React, Spotify API)</p>
           </article>
 
+          <!-- Wanderlist -->
           <article>
             <a href="#" class="image featured"
               ><img src="media/pic01.jpg" alt=""
@@ -180,6 +157,7 @@
             <p>(React, Weather API)</p>
           </article>
 
+          <!-- Alien Game -->
           <article>
             <a href="#" class="image featured"
               ><img src="media/pic02.jpg" alt=""
@@ -191,6 +169,7 @@
             <p>(HTML, CSS, JavaScript)</p>
           </article>
 
+          <!--TV install-->
           <article>
             <a href="#" class="image featured"
               ><img src="media/pic03.jpg" alt=""
@@ -202,6 +181,7 @@
             <p>(HTML, CSS, JavaScript)</p>
           </article>
 
+          <!-- H&A -->
           <article>
             <a href="#" class="image featured"
               ><img src="media/pic04.jpg" alt=""
@@ -213,6 +193,7 @@
             <p>(HTML, CSS, JavaScript)</p>
           </article>
 
+          <!--Data Structures-->
           <article>
             <a href="#" class="image featured"
               ><img src="media/pic05.jpg" alt=""
@@ -469,7 +450,57 @@
                   </li>
                 </ul>
               </section>
-
+              <!-- Modals -->
+              <div class="modal" id="modal1">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="modal-title">
+                      STARVIN
+                      <button data-close-button class="close-button">
+                        &times;
+                      </button>
+                    </div>
+                    <img src="media/pic01.jpg" alt="" />
+                  </div>
+                  <div class="modal-body">
+                    <h3>
+                      <a href="https://www.starvin.noelloera.com">WEBSITE</a> |
+                      <a href="https://github.com/noelloera/starvin">CODE</a>
+                    </h3>
+                    <p>React | CSS | Yelp API</p>
+                    <p>
+                      Front-end React application which uses Yelp's API JSON
+                      data. Provides a simplified front-end experience to three
+                      types of queries made to the Yelp API (best matches, high
+                      ratings, and most amounts of reviews). Follows the API
+                      implementation standards provided in the Yelp
+                      documentation
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal" id="modal2">
+                <img src="media/pic02.jpg" alt="" />
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="modal-title">Quote Keeper</div>
+                    <button data-close-button class="close-button">
+                      &times;
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <a href="https://www.starvin.noelloera.com">WEBSITE</a> |
+                    <a href="https://github.com/noelloera/quotekeeper">CODE</a>
+                    <p>React | CSS | Yelp API</p>
+                    <p>
+                      Full-stack application which uses test driven development.
+                      Allows for the storage of quotes in a Mongo DB connected
+                      database. This application uses CRUD server principles.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="overlay"></div>
               <!-- Copyright -->
               <div class="copyright">
                 <ul class="menu">
@@ -495,5 +526,6 @@
     <script src="./assets/js/breakpoints.min.js"></script>
     <script src="./assets/js/util.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modals.js"></script>
   </body>
 </html>
