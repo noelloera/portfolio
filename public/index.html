@@ -9,8 +9,16 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <meta name="portfolio" content="A portfolio by: Noel Loera" />
+    <!--favicon links-->
     <link rel="icon" href="./favicon.ico" />
     <link rel="shortcut icon" type="image/ico" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="touch-icon-iphone4.png"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <noscript
       ><link rel="stylesheet" href="./assets/css/noscript.css"
@@ -98,7 +106,7 @@
           <article data-modal-target="#modal1">
             <a class="image featured"><img src="media/pic01.jpg" alt="" /></a>
             <h3><a>STARVIN</a></h3>
-            <p>Front-End<br />(React, Yelp API)</p>
+            <p>Front-End<br />React | Yelp API</p>
           </article>
 
           <!-- Quote Keeper -->
@@ -107,8 +115,10 @@
             <header>
               <h3><a>QUOTE KEEPER</a></h3>
             </header>
-            <p>Full-Stack</p>
-            <p>(MongoDB, Express, Node, React)</p>
+            <p>
+              Full-Stack<br />
+              MongoDB | Express | Node | React)
+            </p>
           </article>
 
           <!-- Login -->
@@ -148,7 +158,7 @@
           <!-- Wanderlist -->
           <article>
             <a href="#" class="image featured"
-              ><img src="media/pic01.jpg" alt=""
+              ><img src="media/pic09.jpg" alt=""
             /></a>
             <header>
               <h3><a href="#">WANDERLIST</a></h3>
@@ -160,7 +170,7 @@
           <!-- Alien Game -->
           <article>
             <a href="#" class="image featured"
-              ><img src="media/pic02.jpg" alt=""
+              ><img src="media/pic07.jpg" alt=""
             /></a>
             <header>
               <h3><a href="#">ALIEN OR CHORE GAME</a></h3>
@@ -172,7 +182,7 @@
           <!--TV install-->
           <article>
             <a href="#" class="image featured"
-              ><img src="media/pic03.jpg" alt=""
+              ><img src="media/pic08.jpg" alt=""
             /></a>
             <header>
               <h3><a href="#">TV PRO INSTALL</a></h3>
@@ -184,7 +194,7 @@
           <!-- H&A -->
           <article>
             <a href="#" class="image featured"
-              ><img src="media/pic04.jpg" alt=""
+              ><img src="media/pic09.jpg" alt=""
             /></a>
             <header>
               <h3><a href="#">H&A</a></h3>
@@ -196,7 +206,7 @@
           <!--Data Structures-->
           <article>
             <a href="#" class="image featured"
-              ><img src="media/pic05.jpg" alt=""
+              ><img src="media/pic08.jpg" alt=""
             /></a>
             <header>
               <h5><a href="#">DATA STRUCTURES & ALGORITHMS</a></h5>
@@ -215,7 +225,10 @@
           /></a>
           <header>
             <h2><a href="#">GROCERIES</a></h2>
+
             <p>Full-Stack</p>
+            <a href="#" class="button">WEBSITE</a>
+            <a href="#" class="button">CODE</a>
             <p>
               allows for the storage of lists & items in a Mongo DB connected
               database. user authentication uses an express server and JSON web
@@ -224,9 +237,7 @@
               This application uses CRUD server principles.
             </p>
           </header>
-          <footer>
-            <a href="#" class="button">Continue Reading</a>
-          </footer>
+          <footer></footer>
         </article>
       </div>
 
@@ -450,25 +461,27 @@
                   </li>
                 </ul>
               </section>
+
               <!-- Modals -->
+              <!-- Starvin -->
               <div class="modal" id="modal1">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <div class="modal-title">
-                      STARVIN
-                      <button data-close-button class="close-button">
-                        &times;
-                      </button>
-                    </div>
-                    <img src="media/pic01.jpg" alt="" />
+                <div class="modal-header">
+                  <div class="modal-title">
+                    STARVIN
+                    <button data-close-button class="close-button">
+                      &times;
+                    </button>
                   </div>
+                </div>
+                <div class="modal-content">
+                  <img src="media/pic01.jpg" alt="" />
                   <div class="modal-body">
-                    <h3>
-                      <a href="https://www.starvin.noelloera.com">WEBSITE</a> |
+                    <div class="modal-links">
+                      <a href="http://starvin.herokuapp.com/">WEBSITE</a> |
                       <a href="https://github.com/noelloera/starvin">CODE</a>
-                    </h3>
-                    <p>React | CSS | Yelp API</p>
+                    </div>
                     <p>
+                      React | CSS | Yelp API<br />
                       Front-end React application which uses Yelp's API JSON
                       data. Provides a simplified front-end experience to three
                       types of queries made to the Yelp API (best matches, high
@@ -479,19 +492,24 @@
                   </div>
                 </div>
               </div>
+              <!--Quote Keeper-->
               <div class="modal" id="modal2">
-                <img src="media/pic02.jpg" alt="" />
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <div class="modal-title">Quote Keeper</div>
+                <div class="modal-header">
+                  <div class="modal-title">
+                    QUOTE KEEPER
                     <button data-close-button class="close-button">
                       &times;
                     </button>
                   </div>
+                </div>
+                <div class="modal-content">
+                  <img src="media/pic02.jpg" alt="" />
                   <div class="modal-body">
-                    <a href="https://www.starvin.noelloera.com">WEBSITE</a> |
-                    <a href="https://github.com/noelloera/quotekeeper">CODE</a>
-                    <p>React | CSS | Yelp API</p>
+                    <div class="modal-links">
+                      <a href="https://quotekeeper.herokuapp.com/">WEBSITE</a> |
+                      <a href="https://github.com/noelloera/starvin">CODE</a>
+                    </div>
+                    <p>MongoDB | Express | Node | React</p>
                     <p>
                       Full-stack application which uses test driven development.
                       Allows for the storage of quotes in a Mongo DB connected
